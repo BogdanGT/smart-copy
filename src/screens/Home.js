@@ -9,32 +9,16 @@ const HomeScreen = ({addImages}) => {
     <View
       style={{
         flex: 1,
-        marginTop: '50%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
       }}>
-      <TouchableOpacity
-        onPress={addImages}
+      <View
         style={{
-          backgroundColor: 'black',
-          width: width - 60,
-          height: 50,
-          justifyContent: 'center',
-          borderRadius: 15,
-          borderWidth: 1,
-          borderColor: '#e8e8e8',
           alignSelf: 'center',
+          justifyContent: 'center',
+          width: '70%',
         }}>
-        <Text
-          style={{
-            color: '#e8e8e8',
-            fontFamily: 'DMSans-Bold',
-            textAlign: 'center',
-            fontSize: 15,
-          }}>
-          Adauga imaginile
-        </Text>
-      </TouchableOpacity>
-
-      <View style={{width: '80%', alignSelf: 'center', marginTop: '30%'}}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Evilicons
             name="lock"
@@ -47,11 +31,9 @@ const HomeScreen = ({addImages}) => {
               fontFamily: 'DMSans-Regular',
               color: '#e8e8e8',
               lineHeight: 18,
-              width: '80%',
               fontSize: 13,
             }}>
-            Siguranta impotriva atingerilor neintentionate avand butonul "back"
-            blocat
+            Protection against accidental touches by disabling the “Back” button
           </Text>
         </View>
         <View
@@ -74,11 +56,10 @@ const HomeScreen = ({addImages}) => {
             style={{
               fontFamily: 'DMSans-Regular',
               color: '#e8e8e8',
-              width: '80%',
               fontSize: 13,
               marginLeft: 10,
             }}>
-            Poze negre in stanga si in dreapta
+            Black placeholder images on the left and right sides
           </Text>
         </View>
         <View
@@ -101,10 +82,34 @@ const HomeScreen = ({addImages}) => {
               fontSize: 13,
               marginLeft: 10,
             }}>
-            Imaginile se ajusteaza automat dupa orientarea telefonului
+            Images automatically adjust based on screen orientation
           </Text>
         </View>
       </View>
+
+      <TouchableOpacity
+        onPress={addImages}
+        style={{
+          backgroundColor: 'black',
+          height: 50,
+          justifyContent: 'center',
+          borderRadius: 15,
+          borderWidth: 1,
+          borderColor: '#e8e8e8',
+          alignSelf: 'center',
+          marginTop: 50,
+          width: width - 130,
+        }}>
+        <Text
+          style={{
+            color: '#e8e8e8',
+            fontFamily: 'DMSans-Bold',
+            textAlign: 'center',
+            fontSize: 15,
+          }}>
+          Add images
+        </Text>
+      </TouchableOpacity>
 
       <Text
         style={{
@@ -117,7 +122,7 @@ const HomeScreen = ({addImages}) => {
           textAlign: 'center',
           fontSize: 10,
         }}>
-        {'<3'} from BogdanGT Company
+        {'<3'} from BogdanGT
       </Text>
     </View>
   );

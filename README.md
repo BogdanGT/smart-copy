@@ -1,3 +1,3 @@
-# Copiaza Inteligent
+# Smart Copy
 
-O aplicație React Native care permite copierea la teste oferind imagini negre intre pozele dupa care copiezi.
+A React Native app designed to discreetly browse images during tests, using black placeholders between reference pictures.
